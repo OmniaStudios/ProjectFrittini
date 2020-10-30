@@ -1,2 +1,2 @@
 # ProjectFrittini
-A project but fritto
+A project but fritto 🍟
