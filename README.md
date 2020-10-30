@@ -1,2 +1,2 @@
-# projectFrittini
-A project, but fritto. 🍟
+# projectFrittini  🍟
+A project, but fritto.
