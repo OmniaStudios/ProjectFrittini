@@ -1,0 +1,26 @@
+{
+  "name": "project-frittini",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmniaStudios/projectFrittini.git"
+  },
+  "author": "OmniaStudios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmniaStudios/projectFrittini/issues"
+  },
+  "homepage": "https://github.com/OmniaStudios/projectFrittini#readme"
+}
