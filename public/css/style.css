@@ -4,18 +4,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+nav div ul{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+}
 
 nav{
     background-color: rgb(245, 245, 245);
     color: black;
-    padding: 25px !important;
+    height: 8vh;
     font-size: large;
     font-weight: bold;
 }
 
+
 nav div li{
     color:#3b3b3b;
     margin-left:2vw;
+}
+
+nav div ul{
+    pposition:absolute;
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
 }
 
 nav div li a{
@@ -24,7 +39,7 @@ nav div li a{
 }
 
 nav div li a:hover{
-    color: rgb(255, 255, 255) !important;
+    color: rgb(24, 24, 24) !important;
     transition: 0.3s;
     transform: scale(1.1);
 }

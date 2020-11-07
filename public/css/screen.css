@@ -2,28 +2,41 @@
 @media only screen 
 and (max-width : 768px) {
     .brand-logo{
-        width: 8%;
+        width: 60px;
+    }
+
+    .title{
+        margin-left: 50px;
+        line-height: 1.5;
     }
 }
 
 /* Tablet */
 @media only screen 
-and (max-width : 1024px) {
+and (max-width : 989px) {
     .brand-logo{
-        width: 8%;
+        width: 40px;
+        border:none !important;
+    }
+
+    .title{
+        margin-left: 50px;
+        line-height: 1.5;
     }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1024px) {
+and (min-width : 990px) {
     .brand-logo{
-        width: 5vw;
-        padding-right: 3vw;
-        border-right:3px solid rgb(0, 0, 0)
+        width: 90px;
+        padding-right: 50px;
+        border-right:3px solid rgb(0, 0, 0);
     }
 
-    nav div li:first-child{
-        margin-left: 4vw;
+    .title{
+        position:relative;
+        left: 50px;
+        line-height: 1.5;
     }
 }
