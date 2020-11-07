@@ -1,0 +1,29 @@
+/* Smarthphone */
+@media only screen 
+and (max-width : 768px) {
+    .brand-logo{
+        width: 8%;
+    }
+}
+
+/* Tablet */
+@media only screen 
+and (max-width : 1024px) {
+    .brand-logo{
+        width: 8%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1024px) {
+    .brand-logo{
+        width: 5vw;
+        padding-right: 3vw;
+        border-right:3px solid rgb(0, 0, 0)
+    }
+
+    nav div li:first-child{
+        margin-left: 4vw;
+    }
+}
