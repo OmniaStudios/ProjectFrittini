@@ -3,6 +3,8 @@
 const express = require('express');
 const twilio = require('twilio');
 
+const keys = require('./config/keys');
+
 
 
 /* Definizione app */
@@ -13,8 +15,9 @@ const routerBasic = require('./routes/routerBasic');
 
 app.use(express.static(__dirname + '/public'));
 
-var accountSid = 'AC73d390faa0d03ab6ae7f14acc0ae7429';
-var authToken = '35067d97bbd267334e236d340cacbf42';
+
+var accountSid  = keys.twilio.accountSid;
+var authToken = keys.twilio.authToken;
 var client = new twilio(accountSid, authToken);
 
 
