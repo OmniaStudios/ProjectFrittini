@@ -39,4 +39,10 @@ and (min-width : 990px) {
         left: 50px;
         line-height: 1.5;
     }
+
+    
+    nav div{
+        position: absolute;
+        width: 99%;
+    }
 }
