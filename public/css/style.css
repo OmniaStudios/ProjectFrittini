@@ -25,24 +25,23 @@ nav div li{
     margin-left:2vw;
 }
 
-nav div ul{
-    pposition:absolute;
-left:0;
-right:0;
-margin-left:auto;
-margin-right:auto;
-}
-
 nav div li a{
     color: black !important;
     font-size: 20px;
 }
 
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
 nav div li a:hover{
     color: rgb(24, 24, 24) !important;
-    transition: 0.3s;
-    transform: scale(1.1);
-}
+    transition: 0.5s;
+    transform: scale(1.03);
+    color: #15151e !important;
+} 
 
 .brand-logo{
     margin-left: 2vw;

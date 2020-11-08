@@ -23,6 +23,11 @@ and (max-width : 989px) {
         margin-left: 50px;
         line-height: 1.5;
     }
+
+    
+    .navbar-collapse{
+        background-color: rgb(245, 245, 245);
+    }
 }
 
 /* Desktops and laptops ----------- */
@@ -44,5 +49,22 @@ and (min-width : 990px) {
     nav div{
         position: absolute;
         width: 99%;
+    }
+
+    
+    nav a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 0%;
+        height: 2px;
+        background-color: #15151e;
+        transition: 0.5s;
+    }
+
+    nav a:hover::before {
+        width: 100%;
     }
 }
