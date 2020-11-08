@@ -5,18 +5,22 @@
 }
 
 nav div ul{
-    position: relative;
+    position: static;
     margin: 0 auto;
     text-align: center;
     left: 0;
 }
 
-nav{
+#navcontainer{
     background-color: rgb(245, 245, 245);
+}
+
+nav{
     color: black;
     height: 8vh;
     font-size: large;
     font-weight: bold;
+    background-color: rgb(245, 245, 245)
 }
 
 
@@ -46,3 +50,4 @@ nav div li a:hover{
 .brand-logo{
     margin-left: 2vw;
 }
+
