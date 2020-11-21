@@ -19,6 +19,12 @@ and (max-width : 768px) {
     .navbar-nav .nav-link {
        padding-right: 20px;
     }
+    
+    .navbar-collapse {
+        background-color: rgb(245, 245, 245);
+        border: 1px solid white;
+        border-radius: 6px;
+    }
 }
 
 /* Tablet */
@@ -46,6 +52,16 @@ and (max-width : 989px) {
         text-align: right;
         right: 10px;
     }
+
+    .navbar-collapse {
+        background-color: rgb(245, 245, 245);
+        border: 1px solid white;
+        border-radius: 6px;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 20px;
+     }
 }
 
 /* Desktops and laptops ----------- */

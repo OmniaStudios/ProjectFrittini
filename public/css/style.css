@@ -2,7 +2,11 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
 }
+
+/* */
 
 nav div ul{
     position: static;
@@ -17,10 +21,14 @@ nav div ul{
 
 nav{
     color: black;
-    height: 8vh;
+    height: 12vh;
     font-size: large;
-    font-weight: bold;
-    background-color: rgb(245, 245, 245)
+    font-weight: 500;
+    background-color: rgb(251, 252, 252)
+}
+
+.title{
+    font-weight: 900;
 }
 
 
@@ -30,7 +38,7 @@ nav div li{
 }
 
 nav div li a{
-    color: black !important;
+    color: #15151e !important;
     font-size: 20px;
 }
 
@@ -42,8 +50,6 @@ nav a {
 
 nav div li a:hover{
     color: rgb(24, 24, 24) !important;
-    transition: 0.5s;
-    transform: scale(1.03);
     color: #15151e !important;
 } 
 
@@ -51,3 +57,34 @@ nav div li a:hover{
     margin-left: 2vw;
 }
 
+
+/* Body */
+
+.presentation{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://cdni.rbth.com/rbthmedia/images/2019.07/original/5d19f14d15e9f96caa508257.jpg');
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.presentation::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+}
+
+.logo-container{
+    position: absolute;
+}
+
+.medium{
+    width: 400px;
+}
