@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-/* */
+/* Header */
 
 nav div ul{
     position: static;
@@ -21,7 +21,6 @@ nav div ul{
 
 nav{
     color: black;
-    height: 12vh;
     font-size: large;
     font-weight: 500;
     background-color: rgb(251, 252, 252)
@@ -87,4 +86,62 @@ nav div li a:hover{
 
 .medium{
     width: 400px;
+}
+
+/* Arrow */
+
+.arrow-container{
+    position: absolute;
+    bottom: 10px;
+}
+
+.arrow-style{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.bounce {
+	-webkit-animation: bounce 1.5s;
+	        animation: bounce 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+	60% {
+		-webkit-transform: translateY(-12px);
+		        transform: translateY(-12px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+	60% {
+		-webkit-transform: translateY(-12px);
+		        transform: translateY(-12px);
+	}
 }
