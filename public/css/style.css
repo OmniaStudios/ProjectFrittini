@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Header */
 
 nav div ul{
@@ -59,6 +63,11 @@ nav div li a:hover{
 
 /* Body */
 
+body {
+    /* overflow: hidden;  */
+    overflow-x: hidden;
+}
+
 .presentation{
     height: 100vh;
     width: 100vw;
@@ -86,6 +95,84 @@ nav div li a:hover{
 
 .medium{
     width: 400px;
+}
+
+a{
+    color: black;
+}
+
+
+.timetables{
+    /*background-color: rgb(251, 252, 252);*/
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(251, 252, 252);
+    font-size: large;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.timetables>h1{
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+/* .timetables div:first-child{
+    width: 100vw;
+} */
+
+.timetables-container{
+    width: 60vw;
+    border: 3px solid black;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.timetables-container>div{
+    padding: 1em;
+    text-align:center;
+    font-size: x-large;
+    font-size: 1.5em
+    /* border-bottom: 1px solid black; */
+    
+}
+
+/* .timetables-container div:first-child{
+    text-align:center;
+    border-bottom: 1px solid black;
+} */
+
+.timetables-container div:nth-child(2n){
+    padding: 0em;
+    border: 1px solid black;
+    height: 0px;
+    width: 80%;
+}
+
+.button{
+    margin: 3em;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    display: inline-block;
+    outline:none;
+    
+}
+
+.button:hover{
+    border-radius: 50px;
+    border-color:  black;
+    transition: all 0.3s ease 0s;
+    outline:none;
 }
 
 /* Arrow */
