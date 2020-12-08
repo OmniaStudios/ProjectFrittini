@@ -73,6 +73,8 @@ body {
     width: 100vw;
     background-image: url('https://cdni.rbth.com/rbthmedia/images/2019.07/original/5d19f14d15e9f96caa508257.jpg');
     background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,12 +113,15 @@ a{
     padding-top: 15%;
     padding-bottom: 15%;
     text-align: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .timetables>h1{
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3.8em;
 }
 
 /* .timetables div:first-child{
