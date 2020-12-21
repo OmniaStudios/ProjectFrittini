@@ -6,7 +6,7 @@ and (max-width : 768px) {
     }
 
     .brand-logo{
-        width: 60px;
+        width: 40px;
     }
 
     .title{
@@ -40,9 +40,15 @@ and (max-width : 768px) {
         width: 80%;
     }
 
+    .medium{
+        width: 330px;
+    }
+
     footer div{
         margin-bottom: 20px;
     }
+
+    
 }
 
 /* Tablet */
@@ -100,6 +106,10 @@ and (max-width : 989px) {
 
     footer div:last-child(3){
         margin-bottom: 20px;
+    }
+
+    .button{
+        background-color: white;
     }
 }
 

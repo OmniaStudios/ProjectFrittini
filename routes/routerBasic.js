@@ -15,5 +15,9 @@ router
     .route('/menu')
     .get(controllerBasic.get_menu);
 
+ router
+    .route('/menufamily')
+    .get(controllerBasic.get_menu);
+
 /* Esportazione router */
 module.exports = router;
