@@ -46,9 +46,7 @@ and (max-width : 768px) {
 
     footer div{
         margin-bottom: 20px;
-    }
-
-    
+    } 
 }
 
 /* Tablet */
@@ -112,6 +110,7 @@ and (max-width : 989px) {
     .button{
         background-color: white;
     }
+
 }
 
 /* Desktops and laptops ----------- */
