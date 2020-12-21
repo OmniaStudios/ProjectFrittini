@@ -86,7 +86,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(128, 128, 128, .5)
 }
 
 .logo-container{
@@ -103,20 +103,37 @@ a{
 
 
 .timetables{
-    /*background-color: rgb(251, 252, 252);*/
+    background-image: url('https://auraibla.it/wp-content/uploads/2017/06/i-croccantissimi-arancini-di-riso-alla-siciliana-ripieni-di-carne-1920x1080.jpg');
     height: 100vh;
     width: 100vw;
-    background-color: rgb(251, 252, 252);
     font-size: large;
     padding-top: 15%;
     padding-bottom: 15%;
     text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-size:cover;
+    position: relative;
 }
 
-.timetables>h1{
+
+.timetables::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, .5)
+}
+
+.timetables div div h1{
+    color: #000000;
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 2.0em;
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
 }
 
 /* .timetables div:first-child{
@@ -124,16 +141,23 @@ a{
 } */
 
 .timetables-container{
+    position: absolute;
+    background-color: rgb(251, 252, 252);
     width: 60vw;
     border: 3px solid black;
     display:flex;
     justify-content:space-between;
     align-items: center;
     flex-direction: column;
-    margin: auto;
-    width: 50%;
+    background-size:cover;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
     border-radius: 10px;
+    box-shadow: 0 0 20px #b3b3b3;
 }
+
 
 .timetables-container>div{
     padding: 1em;
@@ -157,7 +181,7 @@ a{
 }
 
 .button{
-    margin: 3em;
+    width: 20%;
     padding: 15px;
     border: 3px solid black;
     border-radius: 6px;
@@ -165,7 +189,12 @@ a{
     text-transform: uppercase;
     display: inline-block;
     outline:none;
-    
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
 }
 
 .button:hover{
@@ -173,6 +202,7 @@ a{
     border-color:  black;
     transition: all 0.3s ease 0s;
     outline:none;
+    background-color: white;
 }
 
 /* Arrow */

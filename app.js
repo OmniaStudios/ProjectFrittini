@@ -6,7 +6,6 @@ const twilio = require('twilio');
 const keys = require('./config/keys');
 
 
-
 /* Definizione app */
 const app = express();
  //TODO Non finire in carcere
