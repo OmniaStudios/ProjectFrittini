@@ -9,7 +9,7 @@ exports.get_menu = (req, res) => {
     res.status(200).render('menu');
 }
 
-exports.get_menu = (req, res) => {
+exports.get_menu_family = (req, res) => {
     /* Impostazione dello stato HTPP success e rendering della pagina menu*/
     res.status(200).render('menufamily');
 }

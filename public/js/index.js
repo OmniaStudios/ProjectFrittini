@@ -23,7 +23,7 @@ window.addEventListener('load', (event) => {
     let orario = new Date();
     let hours = orario.getHours();
     let minutes = orario.getMinutes();
-    if(hours >= 10 || hours < 15){
+    if(hours >= 10 || hours <= 15){
         console.log("si");
     }
 });

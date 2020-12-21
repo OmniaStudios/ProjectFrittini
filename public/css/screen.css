@@ -97,6 +97,7 @@ and (max-width : 989px) {
         border-radius: 10px;
         background-color: white;
         text-align: center;
+        width: 70%;
     }
 
     
