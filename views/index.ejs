@@ -1,36 +1,32 @@
 <%- include('./partials/header') %>
 
-<body>
-	<section class="presentation">
-		<div class="logo-container">
-			<img class="medium" src="images/logo.png" alt="">
-		</div>
-		<div class="arrow-container">
-			<a href="#timetables"><i class="fas fa-arrow-down bounce arrow-style"></i></a>
-		</div>
-	</section>
+	<body>
+		<section class="presentation">
+			<div class="logo-container">
+				<img class="medium" src="images/logo.png" alt="">
+			</div>
+			<div class="arrow-container">
+				<a href="#timetables"><i class="fas fa-arrow-down bounce arrow-style"></i></a>
+			</div>
+		</section>
 
-	<section class="timetables" id="timetables">
-		
-		<div>
-			<div class="timetables-container">
-				<div>
-					<h1>Benvenuto nel nostro nuovo sito!</h1>
-					<p>Vieni a trovarci!</p>
-					<p>Siamo aperti 7 giorni su 7 dalle 10.00 alle 14.30 e dalle 17.00 alle 21.00.</p>
-				</div>
-				<div></div>
-				<div>
-					<p>
-						Sabato: orario continuato dalle 10:00 alle 21:00
-					</p>
+		<section class="presentation-timetable" id="timetables">
+			<div>
+				<div class="d-flex align-items-center justify-content-center min-vh-100 min-vw-100">
+					<div class="container-menu white-text">
+						<!-- <img class="small" src="images/pizza.png" alt=""> -->
+						<i class="far fa-clock" id="clock"></i>
+						<hr>
+						<h3><b>I NOSTRI ORARI</b></h3>
+						<hr>
+						<h5 class="c">Siamo oaperti 7 giorni su 7 dalle 10.00 alle 14.30 e
+							dalle 17.00 alle 21.00.</h5>
+						<hr>
+						
+						<p class="c">Sabato: orario continuato dalle 10:00 alle 21:00</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<button class="button">chiama</button>
-	</section>
-
-
-</body>
-
-<%- include('./partials/footer') %>
+			<button class="button">chiama</button>
+		</section>
+		<%- include('./partials/footer') %>
