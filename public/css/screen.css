@@ -47,16 +47,53 @@ and (max-width : 768px) {
     footer div{
         margin-bottom: 20px;
     } 
+
+    .medium-p {
+        object-fit: cover;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        border: 1px solid white;
+        box-shadow: 0 0 20px black;
+    }
+
+    .presentation {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+    .products-container {
+        width: 80%;
+    }
+
+    .products-container hr {
+        border: 1px solid rgba(255, 255, 255, 0.349);
+        margin-top: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .medium-p {
+        width: 20vw;
+        height: 20vw;
+        margin-bottom: 5%;
+    }
+
+    .only-mobile {
+        display: block;
+    }
 }
 
 /* Tablet */
 @media only screen 
-and (max-width : 989px) {
+and (max-width : 989px) and (min-width : 769px) {
     nav{
         min-height: 80px;
     }
 
-       .brand-logo{
+    .brand-logo{
         width: 55px;
         border:none !important;
     }
@@ -89,6 +126,18 @@ and (max-width : 989px) {
         padding-right: 20px;
     }
 
+    .presentation {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .presentation-menu {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .presentation-timetable {
+        height: calc(var(--vh, 1vh) * 100); 
+    }
+
     .container-menu {
         padding: 20px;
         box-shadow: 0px 0px 20px #15151e;
@@ -109,6 +158,16 @@ and (max-width : 989px) {
 
     .button{
         background-color: white;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
+    .medium-p {
+        width: 21vw;
+        height: 21vw;
+        margin-bottom: 5%;
     }
 
 }
@@ -133,10 +192,11 @@ and (min-width : 990px) {
     }
 
     
-    nav .navbar-collapse{
-        position: absolute;
-        right: 60px;
-    }
+    nav .navbar-collapse {
+    position: absolute;
+    right: 0px;
+    width: 64vw;
+}
 
     
     nav a::before {
@@ -155,7 +215,16 @@ and (min-width : 990px) {
         width: 100%;
     }
 
-    nav .navbar-nav{
-        right: 5px;
+    div nav {
+        width: 66vw;
     }
+
+    nav .navbar-nav{
+        right: 0px;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
 }
