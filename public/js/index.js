@@ -26,11 +26,14 @@ window.addEventListener('load', (event) => {
     let minutes = orario.getMinutes();
     let day = orario.getDay();
 
+    console.log(hours + "" + minutes)
     // gestione giorni normali
     if (hours >= 10 && hours < 15 && day != 6) {
-        if (hours == 15 && minutes <= 30) {
-            status = "Aperti";
-            color = "Green";
+        status = "Aperti";
+        color = "Green";
+        if (hours == 15 && minutes > 30) {
+            status = "Chiusi";
+            color = "Red";
         }
     }
 
