@@ -1,5 +1,45 @@
 <%- include('./partials/header') %>
-
-
-
-<%- include('./partials/footer') %>
+    <section class="presentation-menu">
+        <div class="d-flex align-items-center justify-content-center min-vh-100 min-vw-100">
+            <div class="container-form white-text">
+                <form>
+                    <div>
+                        <div class="only-desktop">
+                            <img class="small" src="images/icon/chef.png" alt="">
+                            <hr>
+                            <h3><b>Lavora con noi</b></h3>
+                        </div>
+                        <div>
+                            <img class="only-mobile-inline small img-mobile"style="vertical-align:middle" src="images/icon/chef.png">
+                            <div class="only-mobile-inline separator"></div>
+                            <span class="only-mobile-inline form-text" style="">Lavora con noi.</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row form">
+                        <div class="col">
+                            <label for="validationServer01">First name</label>
+                            <input type="text" class="form-control" id="validationServer01" placeholder="First name"
+                                required>
+                        </div>
+                        <div class="col">
+                            <label for="validationServer02">Last name</label>
+                            <input type="text" class="form-control" id="validationServer02" placeholder="Last name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Corpo della mail</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <%- include('./partials/footer') %>
