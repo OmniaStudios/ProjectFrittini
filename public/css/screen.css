@@ -36,7 +36,6 @@ and (max-width : 768px) {
         border-radius: 10px;
         background-color: white;
         text-align: center;
-        position: absolute;
         width: 80%;
         min-width: 300px;
         margin-top: 40px;
@@ -104,6 +103,16 @@ and (max-width : 768px) {
     .only-mobile-inline {
         display: inline;
     }
+
+    
+    .i-font-small {
+        font-size: 1.2rem;
+    }
+    
+    .i-font-medium {
+        font-size: 1.2rem;
+    }
+
 }
 
 /* Tablet */
@@ -202,6 +211,10 @@ and (max-width : 989px) and (min-width : 769px) {
         display: none;
     }
 
+    .tablet-fix {
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Desktops and laptops ----------- */
@@ -261,6 +274,11 @@ and (min-width : 990px) {
 
     .only-mobile-inline {
         display: none
+    }
+
+    .computer-fix
+    {
+        min-height: 350px;
     }
 
 }
