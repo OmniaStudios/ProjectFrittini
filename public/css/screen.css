@@ -67,8 +67,6 @@ and (max-width : 768px) {
         object-fit: cover;
         width: 25vw;
         height: 25vw;
-        border-radius: 50%;
-        border: 1px solid white;
         box-shadow: 0 0 20px black;
     }
 

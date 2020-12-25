@@ -189,7 +189,7 @@ body {
 
 .medium-p {
     object-fit: cover;
-    width: 9vw;
+    width: 13vw;
     height: 9vw;
     border-radius: 10%;
 }
@@ -397,15 +397,16 @@ i.menu-small {
 }
 
 .products-container {
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px black;
     padding: 3%;
     border-radius: 20px;
     position: relative;
-    color: white;
+    color: #15151e;
 }
 
 .products-container hr {
-    border: 1px solid rgba(255, 255, 255, 0.349);
+    border: 1px solid rgba(0, 0, 0, 0.37);
     margin-top: 15%; 
     margin-bottom: 15%; 
 }
