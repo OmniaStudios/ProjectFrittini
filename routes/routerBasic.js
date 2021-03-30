@@ -25,7 +25,8 @@ router
 
 router
     .route('/workwithus')
-    .get(controllerBasic.get_work);
+    .get(controllerBasic.get_work)
+    .post(controllerBasic.post_work);
 
 router
     .route('/aboutus')
