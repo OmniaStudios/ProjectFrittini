@@ -7,6 +7,7 @@
 }
 
 html {
+    background-color: #000000;
     scroll-behavior: smooth;
   }
 
@@ -186,86 +187,46 @@ body {
     width: 420px;
 }
 
+.medium-p {
+    object-fit: cover;
+    width: 13vw;
+    height: 9vw;
+    border-radius: 10%;
+}
+
 a{
     color: black;
 }
 
+#status {
+    margin-top: 5px;
+}
+
+
 .timetables{
-    /*background-color: rgb(251, 252, 252);*/
+    background-image: url('https://chefincamicia.com/wp-content/uploads/2020/11/27.08.20_NOBILE_ARANCINI_NOBILE_VIDEO.jpg');
     height: 100vh;
     width: 100vw;
-    background-color: rgb(251, 252, 252);
     font-size: large;
     padding-top: 15%;
     padding-bottom: 15%;
     text-align: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.timetables>h1{
-    margin-bottom: 1em;
-    font-weight: bold;
-    font-size: 3.8em;
-}
-
-/* .timetables div:first-child{
+    height: 100vh;
     width: 100vw;
-} */
-
-.timetables-container{
-    width: 60vw;
-    border: 3px solid black;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
-    border-radius: 10px;
+    background-size:cover;
+    position: relative;
 }
 
-.timetables-container>div{
-    padding: 1em;
-    text-align:center;
-    font-size: x-large;
-    font-size: 1.5em
-    /* border-bottom: 1px solid black; */
-    
+
+.timetables::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, .5)
 }
-
-/* .timetables-container div:first-child{
-    text-align:center;
-    border-bottom: 1px solid black;
-} */
-
-.timetables-container div:nth-child(2n){
-    padding: 0em;
-    border: 1px solid black;
-    height: 0px;
-    width: 80%;
-}
-
-.button{
-    margin: 3em;
-    padding: 15px;
-    border: 3px solid black;
-    border-radius: 6px;
-    transition: all 0.3s ease 0s;
-    text-transform: uppercase;
-    display: inline-block;
-    outline:none;
-    
-}
-
-.button:hover{
-    border-radius: 50px;
-    border-color:  black;
-    transition: all 0.3s ease 0s;
-    outline:none;
-}
-
 
 .timetables div div h1{
     color: #000000;
@@ -526,4 +487,4 @@ footer i {
 .footer-copyright{
     width: 100%;
     text-align: center;
-}
+}   

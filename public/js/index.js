@@ -10,7 +10,7 @@ function changeColorNavbar() {
     }
     const colorAfter = "rgb(234, 236, 238)"
     const colorDefault = "rgb(251, 252, 252)"
-    console.log(colorBefore)
+    // console.log(colorBefore)
     if (colorDefault != colorBefore) {
         document.getElementById("navContainer").style.background = colorDefault
     } else {
@@ -26,7 +26,7 @@ window.addEventListener('load', (event) => {
     let minutes = orario.getMinutes();
     let day = orario.getDay();
 
-    console.log(hours + "" + minutes)
+    // console.log(hours + "" + minutes)
     // gestione giorni normali
     if (hours >= 10 && hours < 15 && day != 6) {
         status = "Aperti";
@@ -47,9 +47,9 @@ window.addEventListener('load', (event) => {
         color = "Green";
     }
 
-    document.getElementById("status").style.color = color;
-    document.getElementById("status").innerText = "Siamo " + status;
-
-
+    if(document.getElementById("status")) {
+        document.getElementById("status").style.color = color;
+        document.getElementById("status").innerText = "Siamo " + status;
+    }
 });
 

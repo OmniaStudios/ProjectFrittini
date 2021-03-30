@@ -21,7 +21,7 @@ exports.get_products = (req, res) => {
 
 exports.get_work = (req, res) => {
     /* Impostazione dello stato HTPP success e rendering della pagina workwithus*/
-    res.status(200).render('workwithus');
+    res.status(200).render('workWithUs');
 }
 
 exports.get_aboutus = (req, res) => {
