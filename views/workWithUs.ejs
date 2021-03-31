@@ -1,0 +1,46 @@
+<%- include('./partials/header') %>
+    <section class="presentation-menu">
+        <div class="d-flex align-items-center justify-content-center min-vh-100 min-vw-100">
+            <div class="container-form white-text">
+                <form action="/workwithus" method="POST">
+                    <div>
+                        <div class="only-desktop">
+                            <img class="small" src="images/icon/chef.png" alt="">
+                            <hr>
+                            <h3><b>Lavora con noi</b></h3>
+                        </div>
+                        <div>
+                            <img class="only-mobile-inline small img-mobile"style="vertical-align:middle" src="images/icon/chef.png">
+                            <div class="only-mobile-inline separator"></div>
+                            <span class="only-mobile-inline form-text">Lavora con noi.</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-row form">
+                        <div class="col">
+                            <label for="quest1">Nome</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Inserisci nome..."
+                                required>
+                        </div>
+                        <div class="col">
+                            <label for="quest2">Cognome</label>
+                            <input type="text" class="form-control" name="surname" id="surname" placeholder="Inserisci cognome..."
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quest3">Indirizzo E-mail</label>
+                        <input type="email" class="form-control" name="mail" id="mail"
+                            placeholder="mario.rossi@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quest4">Corpo della mail</label>
+                        <textarea class="form-control" name="content" id="content" rows="3" required placeholder="Parlaci di te..."></textarea>
+                    </div>
+                    <hr>
+                    <button class="btn btn-form" type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <%- include('./partials/footer') %>
