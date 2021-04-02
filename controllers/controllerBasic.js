@@ -1,6 +1,7 @@
 var nodemailer = require('nodemailer');
 const keys = require('../config/keys'); 
 
+
 /* Definizione delle funzioni disponibili */
 exports.get_home = (req, res) => {
     /* Impostazione dello stato HTPP success e rendering della pagina home*/
@@ -32,16 +33,15 @@ exports.get_work = (req, res) => {
     res.status(200).render('workWithUs');
 }
 
+
 exports.new_number = (req, res) => {
     console.log('ciao ' + req.body.phone);
     res.status(200).render('index');
 }
 
-
 exports.post_work = (req, res) =>{
     const [name, surname, mail, content] = [req.body.name, req.body.surname, req.body.mail, req.body.content];
 
-    /// -------- V1
     const transporter = nodemailer.createTransport({ 
         host: 'smtp.libero.it',
         port: 465,
@@ -72,4 +72,5 @@ exports.post_work = (req, res) =>{
         }  
     })
 }
+
 
