@@ -1,41 +1,41 @@
 <%- include('./partials/header') %>
 
-<body>
-	<section class="presentation">
-		<div class="logo-container">
-			<img class="medium" src="images/logo.png" alt="">
-		</div>
-		<div class="arrow-container">
-			<a href="#timetables"><i class="fas fa-arrow-down bounce arrow-style"></i></a>
-		</div>
-	</section>
+	<body>
+		<section class="presentation">
+			<div class="logo-container">
+				<img class="medium" src="images/logo.png" alt="">
+			</div>
+			<div class="arrow-container">
+				<a href="#timetables"><i class="fas fa-arrow-down bounce arrow-style"></i></a>
+			</div>
+		</section>
 
-	<section class="timetables" id="timetables">
-		<h1>Benvenuto sul sito ufficiale</h1>
-		<div>
-			<div class="timetables-container">
-				<div>
-					<p>Siamo aperti 7 giorni su 7 dalle 10.00 alle 14.30 e
-						dalle 17.00 alle 21.00.
-					</p>
-				</div>
-				<div></div>	
-				<div>
-					<p>
-						Sabato: orario continuato dalle 10:00 alle 21:00
-					</p>
+		<section class="timetables" id="timetables">
+			<h1>Benvenuto sul sito ufficiale</h1>
+			<div>
+				<div class="timetables-container">
+					<div>
+						<p>Siamo aperti 7 giorni su 7 dalle 10.00 alle 14.30 e
+							dalle 17.00 alle 21.00.
+						</p>
+					</div>
+					<div></div>
+					<div>
+						<p>
+							Sabato: orario continuato dalle 10:00 alle 21:00
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<button class="button">chiama</button>
-	</section>
+			<button class="button">chiama</button>
+		</section>
 
 
-	
-	<section class="presentation-timetable" id="timetables">
-		<div>
-			<div class="d-flex align-items-center justify-content-center min-vh-100 min-vw-100">
-				<div class="container-menu white-text">
+
+		<section class="presentation-timetable" id="timetables">
+			<div>
+				<div class="d-flex align-items-center justify-content-center min-vh-100 min-vw-100">
+					<div class="container-menu white-text">
 						<i class="far fa-clock" id="clock"></i>
 						<h5 id="status"></h5>
 						<hr>
@@ -43,14 +43,28 @@
 						<hr>
 						<h5 class="c">Siamo aperti 7 giorni su 7 dalle 10.00 alle 14.30 e
 							dalle 17.00 alle 21.00.</h5>
-							<hr>
-							
-							<p class="c">Sabato: orario continuato dalle 10:00 alle 21:00</p>
-						</div>
+						<hr>
+
+						<p class="c">Sabato: orario continuato dalle 10:00 alle 21:00</p>
+					</div>
+
+					<div class="container-menu white-text">
+						<h3>Iscriviti alla newsletter!</h3>
+						<hr>
+						<p class="c">Inserisci il tuo numero di telefono per ottenere un premio</p>
+						<form action="/" method="POST">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								  <span class="input-group-text" id="basic-addon1">+39</span>
+								</div>
+								<input type="tel" id="phone" name="phone" class="form-control" placeholder="Numero di telefono" aria-label="aaa" aria-describedby="basic-addon1" required>
+							  </div>
+
+							<input type="submit" class="btn btn-primary" value="Registrati!">
+						</form>
 					</div>
 				</div>
-				<button class="button">chiama</button>
-			</section>
-			
-		</body>
-<%- include('./partials/footer') %>
+			</div>
+		</section>
+	</body>
+	<%- include('./partials/footer') %>

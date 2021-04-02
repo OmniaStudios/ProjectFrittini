@@ -9,7 +9,8 @@ const router = express.Router();
 /* Definizione route */
 router
     .route('/')
-    .get(controllerBasic.get_home);
+    .get(controllerBasic.get_home)
+    .post(controllerBasic.new_number);
 
 router
     .route('/menu')
