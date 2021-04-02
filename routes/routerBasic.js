@@ -10,7 +10,7 @@ const router = express.Router();
 router
     .route('/')
     .get(controllerBasic.get_home)
-    .post(controllerBasic.new_number);
+    .post(controllerBasic.new_user);
 
 router
     .route('/menu')
