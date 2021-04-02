@@ -1,5 +1,5 @@
 var nodemailer = require('nodemailer');
-const keys = require('../config/keys');
+const keys = require('../config/keys'); 
 
 /* Definizione delle funzioni disponibili */
 exports.get_home = (req, res) => {
@@ -30,6 +30,11 @@ exports.get_aboutus = (req, res) => {
 exports.get_work = (req, res) => {
     /* Impostazione dello stato HTPP success e rendering della pagina workwithus*/
     res.status(200).render('workWithUs');
+}
+
+exports.new_number = (req, res) => {
+    console.log('ciao ' + req.body.phone);
+    res.status(200).render('index');
 }
 
 
