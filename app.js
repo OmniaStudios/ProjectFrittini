@@ -2,6 +2,9 @@
     - se non dovessero essere presenti, lanciare 'npm i --save' per caricarli da package.json */
 const express = require('express');
 const bodyParser = require('body-parser');
+const session = require('express-session');
+const path = require('path');
+const { flash } = require('express-flash-message');
 /* Definizione app */
 const app = express();
  //TODO Non finire in carcere
@@ -12,6 +15,18 @@ app.use(bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
+app.use(
+  session({
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week 
+      // secure: true
+    },
+  })
+)
+app.use(flash({ sessionKeyName: 'flashMessage' }));
 
 app.use(express.static(__dirname + '/public'));
 /* Impostazione del motore di rendering:

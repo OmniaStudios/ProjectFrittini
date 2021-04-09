@@ -1,11 +1,15 @@
 var nodemailer = require("nodemailer");
 var User = require("../models/User");
+
 const keys = require("../config/keys");
 
 /* Definizione delle funzioni disponibili */
-exports.get_home = (req, res) => {
+exports.get_home = async (req, res) => {
   /* Impostazione dello stato HTPP success e rendering della pagina home*/
-  res.status(200).render("index");
+  const message = await req.consumeFlash("info");
+  res.status(200).render("index", {
+    message: message,
+  });
 };
 
 exports.get_menu = (req, res) => {
@@ -34,31 +38,29 @@ exports.get_work = (req, res) => {
 };
 
 exports.new_user = async (req, res) => {
-  console.log(req.body);
   const newUser = {
     phone: req.body.phone,
     codUtente: makeid(12),
     onBoarded: false,
   };
+
   let alreadyPresent = await User.exists({ phone: req.body.phone });
   if (!alreadyPresent) {
-    User.create(newUser, (err, data) => {
-        console.log(err);
+    User.create(newUser, async (err, data) => {
       if (err) {
         res.status(400).json({
           status: "fail",
           message: "User could not be created",
         });
       } else {
-        res.status(200).redirect("/");
+        res.redirect("/");
       }
     });
-
   } else {
-    console.log('No FRA');
-    res.redirect('/');
+    await req.flash("info", "Questo numero di telefono è già registrato!");
+    res.redirect("/");
   }
-  
+
   /*
         _id
         nomeUtente

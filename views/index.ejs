@@ -9,7 +9,6 @@
 				<a href="#timetables"><i class="fas fa-arrow-down bounce arrow-style"></i></a>
 			</div>
 		</section>
-
 		<section class="timetables" id="timetables">
 			<h1>Benvenuto sul sito ufficiale</h1>
 			<div>
@@ -52,6 +51,11 @@
 						<h3>Iscriviti alla newsletter!</h3>
 						<hr>
 						<p class="c">Inserisci il tuo numero di telefono per ottenere un premio</p>
+						<%if(message[0]){%>
+						<div class="alert alert-danger" role="alert">
+							<%=message[0]%>
+						  </div>
+						  <%}%>
 						<form action="/" method="POST">
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
