@@ -1,7 +1,8 @@
 var nodemailer = require("nodemailer");
 var User = require("../models/User");
-
 const keys = require("../config/keys");
+const { isValidObjectId } = require("mongoose");
+const client = require("twilio")(keys.accountSid, keys.authToken);
 
 /* Definizione delle funzioni disponibili */
 exports.get_home = async (req, res) => {
@@ -9,6 +10,10 @@ exports.get_home = async (req, res) => {
   const message = await req.consumeFlash("info");
   res.status(200).render("index", {
     message: message,
+    status:
+      message == "Numero registrato con successo! Controlla il telefono!"
+        ? "success"
+        : "danger",
   });
 };
 
@@ -53,6 +58,19 @@ exports.new_user = async (req, res) => {
           message: "User could not be created",
         });
       } else {
+        /*MESSAGGIO content> ciao... https://localhost:5000/onBoarding/:id*/
+        client.messages
+          .create({
+            body: "Per proseguire con la registrazione al sito ufficiale del picciotto clicca su questo link https://localhost:5000/onBoarding/" + newUser.codUtente,
+            from: keys.phone,
+            to: "+39" + newUser.phone,
+          })
+          .then((message) => console.log(message.sid));
+
+        await req.flash(
+          "info",
+          "Numero registrato con successo! Controlla il telefono!"
+        );
         res.redirect("/");
       }
     });
@@ -107,6 +125,22 @@ exports.post_work = (req, res) => {
       res.redirect("/workwithus");
     }
   });
+};
+
+exports.get_onboarding = async (req, res) => {
+let exists = await User.exists({ codUtente: req.params.codUtente, onBoarded: false});
+  if (exists) {
+    const ret = await User.updateOne(
+      { codUtente: req.params.codUtente },
+      { onBoarded: true }
+    );
+    ret.n; // Number of documents matched
+    ret.nModified; // Number of documents modified
+
+    res.render("onboarding");
+  } else {
+    res.redirect("/err/404");
+  }
 };
 
 function makeid(length) {

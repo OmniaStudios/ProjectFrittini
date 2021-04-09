@@ -33,5 +33,9 @@ router
     .route('/aboutus')
     .get(controllerBasic.get_aboutus);
 
+router
+    .route('/onboarding/:codUtente')
+    .get(controllerBasic.get_onboarding);
+
 /* Esportazione router */
 module.exports = router;

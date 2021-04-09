@@ -1,0 +1,9 @@
+.main {
+    height: 80vh;
+}
+
+.card {
+    width: 90%; 
+    background-color: rgba(216,216,216,.3);
+    border-radius: 25px;
+}
