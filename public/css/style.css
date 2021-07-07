@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
+* {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -9,39 +8,39 @@
 html {
     background-color: #000000;
     scroll-behavior: smooth;
-  }
+}
+
 
 /* Header */
 
-nav div ul{
+nav div ul {
     position: static;
     margin: 0 auto;
     text-align: center;
     left: 0;
 }
 
-#navcontainer{
+#navcontainer {
     background-color: rgb(245, 245, 245);
 }
 
-nav{
+nav {
     color: black;
     font-size: large;
     font-weight: 500;
     background-color: rgb(251, 252, 252)
 }
 
-.title{
+.title {
     font-weight: 900;
 }
 
-
-nav div li{
-    color:#3b3b3b;
-    margin-left:2vw;
+nav div li {
+    color: #3b3b3b;
+    margin-left: 2vw;
 }
 
-nav div li a{
+nav div li a {
     color: #15151e !important;
     font-size: 20px;
 }
@@ -57,37 +56,38 @@ nav a {
     font-size: 1.2em;
 }
 
-nav div li a:hover{
+nav div li a:hover {
     color: rgb(24, 24, 24) !important;
     color: #15151e !important;
-} 
+}
 
-.brand-logo{
+.brand-logo {
     margin-left: 2vw;
 }
 
-.dropdown-item{
+.dropdown-item {
     text-align: center;
 }
 
 
 /* Scoll Bar */
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
+}
 
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 /* Body */
 
@@ -95,11 +95,11 @@ body {
     overflow-x: hidden;
 }
 
-.presentation{
+.presentation {
     height: 100vh;
     width: 100vw;
     background-image: url('https://cdni.rbth.com/rbthmedia/images/2019.07/original/5d19f14d15e9f96caa508257.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -109,7 +109,7 @@ body {
     border-bottom: 5px solid white;
 }
 
-.presentation::before{
+.presentation::before {
     content: "";
     position: absolute;
     top: 0;
@@ -119,11 +119,11 @@ body {
     background: rgba(128, 128, 128, .5)
 }
 
-.presentation-timetable{
+.presentation-timetable {
     height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
     background-image: url('https://www.wallpapers4u.org/wp-content/uploads/pizza_pastry_tasty_cheese_basil_71458_1920x1080.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -134,7 +134,7 @@ body {
     border-bottom: 5px solid white;
 }
 
-.presentation-timetable::before{
+.presentation-timetable::before {
     content: "";
     position: absolute;
     top: 0;
@@ -144,11 +144,11 @@ body {
     background: rgba(128, 128, 128, .5)
 }
 
-.presentation-menu{
+.presentation-menu {
     height: 100vh;
     width: 100vw;
     background-image: url('https://www.wallpapers4u.org/wp-content/uploads/pizza_pastry_tasty_cheese_basil_71458_1920x1080.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -157,7 +157,7 @@ body {
     position: relative;
 }
 
-.presentation-menu::before{
+.presentation-menu::before {
     content: "";
     position: absolute;
     top: 0;
@@ -167,15 +167,15 @@ body {
     background: rgba(128, 128, 128, .5)
 }
 
-.c{
+.c {
     font-style: oblique;
 }
 
-.logo-container{
+.logo-container {
     position: absolute;
 }
 
-.small{
+.small {
     width: 100px;
 }
 
@@ -183,7 +183,7 @@ body {
     width: 50%;
 }
 
-.medium{
+.medium {
     width: 420px;
 }
 
@@ -194,7 +194,7 @@ body {
     border-radius: 10%;
 }
 
-a{
+a {
     color: black;
 }
 
@@ -202,8 +202,7 @@ a{
     margin-top: 5px;
 }
 
-
-.timetables{
+.timetables {
     background-image: url('https://chefincamicia.com/wp-content/uploads/2020/11/27.08.20_NOBILE_ARANCINI_NOBILE_VIDEO.jpg');
     height: 100vh;
     width: 100vw;
@@ -213,12 +212,11 @@ a{
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-size:cover;
+    background-size: cover;
     position: relative;
 }
 
-
-.timetables::before{
+.timetables::before {
     content: "";
     position: absolute;
     top: 0;
@@ -228,7 +226,7 @@ a{
     background: rgba(128, 128, 128, .5)
 }
 
-.timetables div div h1{
+.timetables div div h1 {
     color: #000000;
     margin-bottom: 1em;
     font-weight: bold;
@@ -237,40 +235,39 @@ a{
     padding-bottom: 1em;
 }
 
-.timetables-container{
+.timetables-container {
     position: absolute;
     background-color: rgb(251, 252, 252);
     width: 60vw;
     border: 3px solid black;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-size:cover;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px #b3b3b3;
 }
 
-
-.timetables-container>div{
+.timetables-container>div {
     padding: 1em;
-    text-align:center;
+    text-align: center;
     font-size: x-large;
-    font-size: 1.5em  
+    font-size: 1.5em
 }
 
-.timetables-container div:nth-child(2n){
+.timetables-container div:nth-child(2n) {
     padding: 0em;
     border: 1px solid black;
     height: 0px;
     width: 80%;
 }
 
-.button{
+.button {
     width: 20%;
     padding: .7%;
     border: 3px solid black;
@@ -278,7 +275,7 @@ a{
     transition: all 0.3s ease 0s;
     text-transform: uppercase;
     display: inline-block;
-    outline:none;
+    outline: none;
     position: absolute;
     left: 0;
     right: 0;
@@ -288,21 +285,23 @@ a{
     text-align: center;
 }
 
-.button:hover{
+.button:hover {
     border-radius: 50px;
-    border-color:  black;
+    border-color: black;
     transition: all 0.3s ease 0s;
-    outline:none;
+    outline: none;
     background-color: white;
 }
 
+
 /* Arrow */
-.arrow-container{
+
+.arrow-container {
     position: absolute;
     bottom: 10px;
 }
 
-.arrow-style{
+.arrow-style {
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     font-size: xx-large;
@@ -314,50 +313,49 @@ a:hover .arrow-style {
     color: white;
 }
 
-
 .bounce {
-	-webkit-animation: bounce 1.5s;
-	        animation: bounce 1.5s;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
+    -webkit-animation: bounce 1.5s;
+    animation: bounce 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes bounce {
-	0%,
-	25%,
-	50%,
-	75%,
-	100% {
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
-	}
-	40% {
-		-webkit-transform: translateY(-20px);
-		        transform: translateY(-20px);
-	}
-	60% {
-		-webkit-transform: translateY(-12px);
-		        transform: translateY(-12px);
-	}
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    60% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+    }
 }
 
 @keyframes bounce {
-	0%,
-	25%,
-	50%,
-	75%,
-	100% {
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
-	}
-	40% {
-		-webkit-transform: translateY(-20px);
-		        transform: translateY(-20px);
-	}
-	60% {
-		-webkit-transform: translateY(-12px);
-		        transform: translateY(-12px);
-	}
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    60% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+    }
 }
 
 .container-menu {
@@ -368,7 +366,7 @@ a:hover .arrow-style {
     background-color: white;
     text-align: center;
     position: relative;
-    min-width: 500px ;
+    min-width: 500px;
     margin: 0 auto;
 }
 
@@ -380,15 +378,14 @@ a:hover .arrow-style {
     background-color: white;
     text-align: center;
     position: absolute;
-    min-width: 500px ;
+    min-width: 500px;
 }
 
 .text-blue {
     color: rgb(42, 0, 196);
 }
 
-
-#clock{
+#clock {
     font-size: 60px;
 }
 
@@ -407,8 +404,8 @@ i.menu-small {
 
 .products-container hr {
     border: 1px solid rgba(0, 0, 0, 0.37);
-    margin-top: 15%; 
-    margin-bottom: 15%; 
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .btn-form {
@@ -424,8 +421,8 @@ input::placeholder {
     text-align: center;
 }
 
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -434,22 +431,22 @@ input::placeholder {
     background-color: rgba(0, 0, 0, 1);
 }
 
-.form{
+.form {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.img-mobile{
+.img-mobile {
     width: 20%;
     /* border-right: 1px solid rgba(0, 0, 0, 0.3); */
     margin-right: 5%;
 }
 
-.form-text{
+.form-text {
     margin-left: 5%;
 }
 
-.separator{
+.separator {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     height: 100%;
 }
@@ -469,6 +466,7 @@ input::placeholder {
 
 
 /* Footer */
+
 footer {
     text-align: center;
     background-color: black;
@@ -476,7 +474,7 @@ footer {
     bottom: 0;
 }
 
-.info{
+.info {
     margin-top: 5px;
 }
 
@@ -484,7 +482,40 @@ footer i {
     font-size: 30px;
 }
 
-.footer-copyright{
+.footer-copyright {
     width: 100%;
     text-align: center;
-}   
+}
+
+.facebook:hover {
+    color: #3b5998;
+    background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
+    background-size: 55%;
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.insta:hover {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+a.tripadvisor:hover {
+    color: rgb(52, 224, 161);
+}
+
+img.tripadvisor {
+    filter: grayscale(100%);
+}
+
+a.tripadvisor:hover>img {
+    filter: none;
+}
+
+.tripadvisor:hover {
+    text-decoration: none;
+}

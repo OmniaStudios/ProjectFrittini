@@ -14,6 +14,14 @@ const userSchema = new Schema({
         type: Boolean,
         required: true,
         default: false
+    },
+    coupons: {
+        type: Array,
+        required: false
+    },
+    couponHasBeenReedemed: {
+        type: Array,
+        required: false
     }
 })
 

@@ -5,28 +5,32 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const path = require('path');
 const { flash } = require('express-flash-message');
+const morgan = require('morgan')
+
 /* Definizione app */
 const app = express();
- //TODO Non finire in carcere
+//TODO Non finire in carcere
 /* Importazione dei router */
 const routerBasic = require('./routes/routerBasic');
 
-app.use(bodyParser.json() );       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
+app.use(bodyParser.json()); // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
+    extended: true
 }));
 app.use(
-  session({
-    secret: 'secret',
-    resave: false,
-    saveUninitialized: true,
-    cookie: {
-      maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week 
-      // secure: true
-    },
-  })
+    session({
+        secret: 'secret',
+        resave: false,
+        saveUninitialized: true,
+        cookie: {
+            maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week 
+            // secure: true
+        },
+    })
 )
 app.use(flash({ sessionKeyName: 'flashMessage' }));
+
+/* app.use(morgan('dev')) */
 
 app.use(express.static(__dirname + '/public'));
 /* Impostazione del motore di rendering:

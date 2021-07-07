@@ -10,7 +10,7 @@ app.listen(PORT, () => {
     console.log(`projectFrittini | Server started on port ${PORT} - use 'localhost:${PORT}`);
 });
 
-let db = require('./config/keys').MongoURI;
+let db = require('./config/keys').mongoUri;
 mongoose.connect(db, {
     useUnifiedTopology: true,
     useNewUrlParser: true
